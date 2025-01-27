@@ -18,6 +18,9 @@ app.use(express.json());//Configuramos Express para manejar datos en formato JSO
 app.use('/api/articulos',EnrutadorArticulo(ArticuloModel));
 app.use('/api/usuarios',usuariosRutas(UsuariosCMDB));
 app.use('/api/clientes',clientesRutas(ClientesCMDB));
+app.use('/hola',(req,res)=>{
+     resizeBy.send("Hola Mundo");
+})
 conexion();
 app.listen(PORT,()=>{
      console.log("Servidor nuevo");
