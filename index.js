@@ -20,5 +20,5 @@ app.use('/api/usuarios',usuariosRutas(UsuariosCMDB));
 app.use('/api/clientes',clientesRutas(ClientesCMDB));
 conexion();
 app.listen(PORT,()=>{
-     console.log("Servidor a la espera");
+     console.log("Servidor nuevo");
 });
