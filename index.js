@@ -19,7 +19,7 @@ app.use('/api/articulos',EnrutadorArticulo(ArticuloModel));
 app.use('/api/usuarios',usuariosRutas(UsuariosCMDB));
 app.use('/api/clientes',clientesRutas(ClientesCMDB));
 app.use('/hola',(req,res)=>{
-     resizeBy.send("Hola Mundo");
+     res.send("Hola Mundo");
 })
 conexion();
 app.listen(PORT,()=>{
